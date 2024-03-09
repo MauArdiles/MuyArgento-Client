@@ -1,0 +1,49 @@
+@keyframes banner {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.carrousel {
+  width: 100%;
+  max-width: 120em;
+  background-color: transparent;
+  overflow: hidden;
+}
+.carrousel .imgContainer {
+  width: 200%;
+  background-color: transparent;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+  transform: translateX(0%);
+}
+.carrousel .img {
+  width: 50%;
+  background-color: transparent;
+  min-height: 10vh;
+  height: 249px;
+}
+.carrousel .puntos {
+  width: 100%;
+  background-color: transparent;
+  padding: 0.1em;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.carrousel .punto {
+  width: 0.7em;
+  height: 0.7em;
+  background-color: rgb(213, 213, 213);
+  margin: 0.2em;
+  border-radius: 100%;
+}
+.carrousel .punto.active {
+  background-color: rgb(94, 94, 94);
+}/*# sourceMappingURL=Banner.css.map */

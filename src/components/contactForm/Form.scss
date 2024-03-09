@@ -1,0 +1,69 @@
+.Container{
+    width: 100%;
+    height: auto;
+.contactForm{
+    background-color: #3cb4f954;
+    width: 100%;
+    height: auto;
+    }
+    .formField{
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+    }
+    .legend{
+        font-size: 32px;
+        color: black;
+        font-family: Helvetica;
+        text-align: center;
+    }
+    .form-ul{
+        margin: 10px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-li{
+        width: 705px;
+        height: 44px;
+    }
+    .lbl{
+        width: 210px;
+        color: #000000;
+        font-family: Helvetica;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 10px;
+    }
+    .inp{
+        width: 495px;
+        height: 40px;
+        border: 2px solid #FFFFFF;
+        margin: 10px;
+        font-family: Helvetica;
+        font-size: 18px;
+    }
+    .txt{
+        width: 1000px;
+        height: 150px;
+        border: 2px solid #FFFFFF;
+        margin: 10px;
+        overflow: hidden;
+        font-family: Helvetica;
+        font-size: 18px;
+    }
+    .btn{
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2%;
+    }
+    .btn-send{
+        width: 25%;
+    }
+    .btn-clean{
+        width: 25%;
+    }
+}

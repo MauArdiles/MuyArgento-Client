@@ -1,0 +1,167 @@
+$principal-background: #3CB4F9;
+$font-color: white;
+$font-family: "Arial-Regular", Helvetica;
+.Footer{
+    width: 100%;
+    height: 260px;
+    background-color: $principal-background;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    font-family: $font-family;
+    .Footer-info{
+        width: 100%;
+        color: $font-color;
+        margin: 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 2%;
+        align-items: center;
+        justify-content: flex-start;
+        .Footer-logo{
+            background-image: transparent;
+            border: 0px none;
+            height: 153px;
+            width: 157px;
+            margin-left: 0px;
+            .logo{
+                border-radius: 100%;
+                left: 0;
+                position: relative;
+            }
+        }
+        .div-title{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            .p-1{
+                color: $font-color;
+                font-size: 20px;
+                font-weight: 400;
+            }
+            .p-2{
+                color: $font-color;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        .div-envios{
+            width: 244px;
+            height: 60px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            .p-3{
+                color: $font-color;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: underline;
+                text-align: center;
+            }
+            .img-envios{
+                display: flex;
+                flex-flow:row nowrap;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5px;
+                gap: 10%;
+                .dhl{
+                    width: 60px;
+                    height: 60px;
+                }
+                .fedex{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+        }
+        .div-pagos{
+            width: 244px;
+            height: 60px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            .p-4{
+                color: $font-color;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: underline;
+                text-align: center;
+            }
+            .img-pagos{
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10px;
+                gap: 10%;
+                .img-master{
+                    width: 48px;
+                    height: 48px;
+                }
+                .img-visa{
+                    width: 48px;
+                    height: 48px;
+                }
+                .img-paypal{
+                    width: 48px;
+                    height: 48px;
+                }
+            }
+        }
+        .div-info{
+            width: 244px;
+            height: 60px;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            .p-5{
+                max-height: -moz-fit-content;
+                max-height: fit-content;
+                color: $font-color;
+                font-size: 16px;
+                font-weight: 400;
+                text-decoration: underline;
+                text-align: center;
+            }
+            .p-6{
+                color: $font-color;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+            }
+        }
+    }
+    .Footer-rights{
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: transparent;
+        border-top: 1.5px solid #FFF;
+        justify-content: center;
+        align-items: center;
+        gap: 50%;
+        .Footer-Rs{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            .Footer-liRs{
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .Footer-p{
+            margin: 20px;
+            font-family: "Arial-Regular", Helvetica;
+            color: $font-color;
+            font-size: 16px;
+            }
+    }
+    
+}
