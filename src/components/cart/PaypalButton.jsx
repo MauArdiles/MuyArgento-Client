@@ -14,6 +14,8 @@ export const PaypalButton = (props) => {
   }
 
   const [message, setMessage] = useState("");
+  const baseUrl = "https://muyargento-api.onrender.com";
+  const frontBaseUrl = "www.muyargento.com";
   return (
     <>
       <PayPalButtons
@@ -24,7 +26,7 @@ export const PaypalButton = (props) => {
         }}
         createOrder={async () => {
           try {
-            const response = await fetch("http://localhost:3000/api/orders", {
+            const response = await fetch(`${baseUrl}/api/orders`, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
@@ -59,7 +61,7 @@ export const PaypalButton = (props) => {
         onApprove={async (data, actions) => {
           try {
             const response = await fetch(
-              `http://localhost:3000/api/orders/${data.orderID}/capture`,
+              `${baseUrl}/api/orders/${data.orderID}/capture`,
               {
                 method: "POST",
                 headers: {
@@ -88,7 +90,7 @@ export const PaypalButton = (props) => {
             } else {
               // (3) Successful transaction -> Show confirmation or thank you message
               // Or go to another URL:  actions.redirect('thank_you.html');
-              actions.redirect("http://localhost:5173/PaymmentSuccess");
+              actions.redirect(`${frontBaseUrl}/PaymmentSuccess`);
               const transaction =
                 orderData.purchase_units[0].payments.captures[0];
               setMessage(
@@ -122,7 +124,7 @@ export const PaypalButton = (props) => {
           console.log(`ID: ${props.id} - Detalle Carrito: ${cartDetail}`);
 
           axios
-            .post("http://localhost:3000/send-mail", {
+            .post(`${baseUrl}/send-mail`, {
               to: "ventas@muyargento.com",
               subject: "Compra realizada con éxito",
               text: `ID Compra: ${props.id}
