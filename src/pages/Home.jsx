@@ -1,7 +1,7 @@
 import { Header } from "../components/header/Header";
 import { Banner } from "../components/banner/Banner";
-import { Footer } from "../components/footer/Footer";
 import { MostRated } from "../components/ratedProducts/MostRated";
+import { NewFooter } from "../components/footer/NewFooter";
 // import { FavComment } from "../components/comments/FavComment";
 
 export const Home = () => {
@@ -42,7 +42,7 @@ export const Home = () => {
         </section>
       </main>
       <footer>
-        <Footer />
+        <NewFooter />
       </footer>
     </>
   );

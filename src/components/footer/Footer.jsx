@@ -38,7 +38,9 @@ export const Footer = () => {
         </div>
         <div className="div-info">
           <p className="p-5">Consultas e info</p>
-          <p className="p-6">muyargento@muyargento.com</p>
+          <a className="p-6" href="mailto:muyargento@muyargento.com">
+            muyargento@muyargento.com
+          </a>
         </div>
         <Chatbot />
       </div>
